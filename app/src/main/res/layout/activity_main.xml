@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zsml.studytextview.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:text="默认字体:"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#7b35ae"
+                android:textSize="18sp"
+                android:text="默认字体默认字体默认字体默认字体"/>
+
+            <!--1中划线-->
+            <TextView
+                style="@style/textTitle"
+                android:text="1.中划线:"/>
+            <TextView
+                android:id="@+id/tv_center_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#7b35ae"
+                android:textSize="18sp"
+                android:text="中划线中划线中划线中划线中划线"/>
+
+
+            <!--2下划线-->
+            <TextView
+                style="@style/textTitle"
+                android:text="2.下划线:"/>
+            <TextView
+                android:id="@+id/tv_bottom_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#7b35ae"
+                android:textSize="18sp"
+                android:text="下划线下划线下划线下划线下划线"/>
+
+
+            <!--3取消划线-->
+            <TextView
+                style="@style/textTitle"
+                android:text="3.取消划线:"/>
+            <TextView
+                android:id="@+id/tv_cancel_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#7b35ae"
+                android:textSize="18sp"
+                android:text="取消划线取消划线取消划线取消划线"/>
+
+            <!--4加清晰字体下划线-->
+            <TextView
+                style="@style/textTitle"
+                android:text="4.加清晰字体下划线:"/>
+            <TextView
+                android:id="@+id/tv_clear_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#7b35ae"
+                android:textSize="18sp"
+                android:text="加清晰划线加清晰划线加清晰划线"/>
+
+
+            <!--5抗锯齿-->
+            <TextView
+                style="@style/textTitle"
+                android:text="5.抗锯齿:"/>
+            <TextView
+                android:id="@+id/tv_anti_aliasing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#7b35ae"
+                android:textSize="18sp"
+                android:text="抗锯齿抗锯齿抗锯齿抗锯齿抗锯齿"/>
+
+
+            <!--6一段文本，多种样式-->
+            <TextView
+                style="@style/textTitle"
+                android:text="6.一段文本，多种样式:"/>
+            <TextView
+                android:id="@+id/tv_two_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="一段文本，多种样式一段文本，多种样式"/>
+
+            <!--7在布局文件中加粗-->
+            <TextView
+                style="@style/textTitle"
+                android:text="7.在布局文件中设置加粗:"/>
+            <TextView
+                android:id="@+id/bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="在布局文件中设置加粗(中文English都可以)"
+                android:textColor="#7b35ae"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!--8在代码中设置加粗-->
+            <TextView
+                style="@style/textTitle"
+                android:text="8.在代码中设置加粗："/>
+            <TextView
+                android:id="@+id/bold1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="在代码中设置中文加粗"
+                android:textColor="#7b35ae"
+                android:textSize="18sp"/>
+
+            <!--9在布局文件中设置斜体字-->
+            <TextView
+                style="@style/textTitle"
+                android:text="9.在布局文件中设置斜体字："/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="在布局文件中设置斜体字在布局文件中设置斜体字"
+                android:textColor="#7b35ae"
+                android:textSize="18sp"
+                android:textStyle="italic" />
+
+            <!--10在布局文件中设置斜体字加粗-->
+            <TextView
+                style="@style/textTitle"
+                android:text="10.在布局文件中设置斜体字加粗："/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="在布局文件中设置斜体字加粗在布局文件中设置斜体字加粗"
+                android:textColor="#7b35ae"
+                android:textSize="18sp"
+                android:textStyle="italic|bold" />
+
+            <!--11设置TextView超出两行用省略号代替-->
+            <TextView
+                style="@style/textTitle"
+                android:text="11.设置TextView超出两行用省略号代替："/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#7b35ae"
+                android:ellipsize="end"
+                android:lines="2"
+                android:text="设置TextView超出两行用省略号代替,设置TextView超出两行用省略号代替,设置TextView超出两行用省略号代替"
+                android:textSize="18sp"/>
+
+            <!--12设置文本是否可被选中-->
+            <TextView
+                style="@style/textTitle"
+                android:text="12.设置文本是否可被选中："/>
+            <TextView
+                android:id="@+id/tv_selectable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置文本是否可被选中设置文本是否可被选中"
+                android:textColor="#7b35ae"
+                android:textSize="18sp"/>
+
+            <!--13设置TextView在获取焦点后是否选中全部内容-->
+            <TextView
+                style="@style/textTitle"
+                android:text="13.设置TextView在获取焦点后是否选中全部内容："/>
+            <TextView
+                android:id="@+id/tv_selectAllOnFocus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:text="设置TextView在获取焦点后是否选中全部内容"
+                android:textColor="#7b35ae"
+                android:textSize="18sp"/>
+
+            <!--14.设置TextView被选中内容的高亮背景色-->
+            <TextView
+                style="@style/textTitle"
+                android:text="14.设置TextView被选中内容的高亮背景色："/>
+            <TextView
+                android:id="@+id/tv_colorhighlight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:text="设置TextView被选中内容的高亮背景色设置TextView被选中内容的高亮背景色"
+                android:textColor="#7b35ae"
+                android:textSize="18sp"/>
+
+            <!--15.设置TextView链接相关内容-->
+            <TextView
+                style="@style/textTitle"
+                android:text="15.设置TextView链接相关内容："/>
+            <TextView
+                android:id="@+id/tv_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:text="设置TextView链接相关内容，设置TextView链接相关内容"
+                android:textColor="#7b35ae"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
