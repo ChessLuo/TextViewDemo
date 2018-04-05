@@ -1,4 +1,4 @@
-﻿# 前言：
+# 前言：
 
 转眼间来到12月份了，又差不多过去一年了！时光匆匆，我依然埋头苦干着，失去了很多和朋友互动的时间，哎，心想还是等有钱了再多聚聚吧！现在开始从零学习Android吧，虽然技术迭代很快，但能从中找到快乐的话，即使累点也是值得的。Android项目开发中估计少不了TextView，今天就总结一些常用的方法，方便查找、复习...
 
@@ -47,7 +47,13 @@ phone：电话号码。
 map：匹配映射网址。
 all：匹配所有连接。
 
+==11.新增TextView ellipsize属性:==
+
+ellipsize="start"(设置TextView超出指定行省略号显示在开头)
+ellipsize="middle"(设置TextView超出指定行省略号显示在中间)
+ellipsize="marquee"(设置TextView以跑马灯方式横向移动)
+
 
 
 # 二、效果图如下：
-![image](https://github.com/zsml2016/TextViewDemo/blob/master/textview.gif)
+![image](C:\Users\Administrator\Desktop\textview.gif)

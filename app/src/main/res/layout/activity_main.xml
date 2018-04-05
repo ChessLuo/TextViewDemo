@@ -218,6 +218,50 @@
                 android:textColor="#7b35ae"
                 android:textSize="18sp"/>
 
+            <!--16.补充TextView———ellipsize属性-->
+            <TextView
+                style="@style/textTitle"
+                android:text="16.设置TextView省略号显示在开头："/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置TextView超出1行省略号显示在开头，设置TextView超出1行省略号显示在开头，设置TextView超出1行省略号显示在开头"
+                android:textColor="#7b35ae"
+                android:ellipsize="start"
+                android:singleLine="true"
+                android:textSize="18sp"/>
+
+            <!--17.补充TextView———ellipsize属性-->
+            <TextView
+                style="@style/textTitle"
+                android:text="17.设置TextView省略号显示在中间："/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置TextView超出1行省略号显示在中间，设置TextView超出1行省略号显示在中间，设置TextView超出1行省略号显示在中间"
+                android:textColor="#7b35ae"
+                android:ellipsize="middle"
+                android:singleLine="true"
+                android:textSize="18sp"/>
+
+            <!--18.补充TextView———ellipsize属性-->
+            <TextView
+                style="@style/textTitle"
+                android:text="18.设置TextView以跑马灯方式横向移动："/>
+            <TextView
+                android:id="@+id/tv_marquee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="设置TextView以跑马灯方式横向移动，设置TextView以跑马灯方式横向移动，设置TextView以跑马灯方式横向移动"
+                android:textColor="#7b35ae"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:ellipsize="marquee"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:singleLine="true"
+                android:textSize="18sp"/>
+
         </LinearLayout>
     </ScrollView>
 

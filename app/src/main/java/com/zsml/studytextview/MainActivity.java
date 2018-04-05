@@ -14,7 +14,7 @@ import android.widget.TextView;
  * @描述 总结Textview
  * @author luoweichao
  * @wechat 1329869063
- * @date 2017/11/3/003 22:35
+ * @date 2017/12/2/002 19:11
  *
  */
 public class MainActivity extends AppCompatActivity {
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView mTvSelectAllOnFocus;
     private TextView mTvColorhighlight;
     private TextView mTvLink;
-
+    private TextView mTvMarquee;
 
 
 
@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
         mTvSelectAllOnFocus = (TextView) findViewById(R.id.tv_selectAllOnFocus);
         mTvColorhighlight = (TextView) findViewById(R.id.tv_colorhighlight);
         mTvLink = (TextView) findViewById(R.id.tv_link);
+        mTvMarquee = (TextView) findViewById(R.id.tv_marquee);
 
     }
 
@@ -105,8 +106,26 @@ public class MainActivity extends AppCompatActivity {
                 +"My-email:zsml2016@163.com\n\n"
                 +"My-phone:+86 0755-888888";
         mTvLink.setText(string);
+
+
+        /**18设置textview跑马灯*/
+        setTextMarquee();
     }
 
+    private void setTextMarquee() {
+        /**
+         android:ellipsize="marquee"
+         android:focusable="true"
+         android:focusableInTouchMode="true"
+         android:clickable="true"
+         android:marqueeRepeatLimit="marquee_forever"
+         android:singleLine="true"
+         */
+//        mTvMarquee.setEllipsize(TextUtils.TruncateAt.MARQUEE);
+//        mTvMarquee.setFocusable(true);
+//        mTvMarquee.setFocusableInTouchMode(true);
+
+    }
 
 
 }
